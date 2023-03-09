@@ -1,0 +1,26 @@
+{
+  "name": "js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "webpack -p",
+    "preview": "vite preview",
+    "test": "karma start", 
+    "compile_tsc": "tsc typesafe.ts"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^4.3.1",
+    "jasmine-core": "^4.5.0",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-jasmine": "^5.1.0",
+    "karma-webpack": "^5.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.0",
+    "webpack": "^5.76.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
