@@ -122,3 +122,16 @@ const stringu2 = stringu.split("");
 console.log(stringu2);
 const answer = stringu2.filter(item => item != input).join("");
 console.log(answer); 
+
+
+
+
+//  
+
+
+const makeFetch = (url: RequestInfo) => {
+    return fetch(url).then(response => response.json()).then(data => console.log(data));
+}; 
+
+
+

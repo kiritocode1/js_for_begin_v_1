@@ -77,3 +77,8 @@ var stringu2 = stringu.split("");
 console.log(stringu2);
 var answer = stringu2.filter(function (item) { return item != input; }).join("");
 console.log(answer);
+//  
+var makeFetch = function (url) {
+    return fetch(url).then(function (response) { return response.json(); }).then(function (data) { return console.log(data); });
+};
+makeFetch("https://jsonplaceholder.typicode.com/todos/1");
